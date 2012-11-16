@@ -1,0 +1,14 @@
+xgettext -f POTFILES -o ru.pot -L Python
+
+if [ -f ru.po ]
+then
+    msginit -i ru.pot -o ruNEW.po        
+    msgmerge ru.po ruNEW.po -o ru.po    
+    rm ruNEW.po
+else
+    msginit -i ru.pot -o ru.po
+fi
+        
+msgfmt ru.po -o shreg.mo
+
+

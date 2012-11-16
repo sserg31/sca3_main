@@ -1,0 +1,7 @@
+Install:
+    cd shreg/
+    dpkg-buildpackage
+    sudo dpkg -i ../shreg_0.3_all.deb
+
+Start:
+    shreg

@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-28 13:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../source/treeView.py:16
+msgid "Add"
+msgstr ""
+
+#: ../source/mainwindow.py:42
+msgid "shreg - cleaning information"
+msgstr ""
+
+#: ../source/mainwindow.py:66
+msgid "Add files to the list and Push 'Clean'"
+msgstr ""
+
+#: ../source/mainwindow.py:79
+msgid "Files to shred"
+msgstr ""
+
+#: ../source/mainwindow.py:80
+msgid "Devices for shred free space"
+msgstr ""
+
+#: ../source/mainwindow.py:98
+msgid "Home"
+msgstr ""
+
+#: ../source/mainwindow.py:100
+msgid "Refresh"
+msgstr ""
+
+#: ../source/mainwindow.py:104
+msgid "Show all"
+msgstr ""
+
+#: ../source/mainwindow.py:105
+msgid "Show all, without hidden"
+msgstr ""
+
+#: ../source/mainwindow.py:106
+msgid "Show only dirs"
+msgstr ""
+
+#: ../source/mainwindow.py:111
+msgid "View"
+msgstr ""
+
+#: ../source/mainwindow.py:116
+msgid "iterations"
+msgstr ""
+
+#: ../source/mainwindow.py:122
+msgid "Add to list"
+msgstr ""
+
+#: ../source/mainwindow.py:125
+msgid "Delete from list"
+msgstr ""
+
+#: ../source/mainwindow.py:128
+msgid "Clean the list"
+msgstr ""
+
+#: ../source/mainwindow.py:132
+msgid "Start/Stop"
+msgstr ""
+
+#: ../source/mainwindow.py:134
+msgid "Exit"
+msgstr ""
+
+#: ../source/mainwindow.py:140
+msgid "Log"
+msgstr ""
+
+#: ../source/mainwindow.py:180
+msgid "(all/used/free)"
+msgstr ""
+
+#: ../source/mainwindow.py:245 ../source/mainwindow.py:354
+#: ../source/mainwindow.py:359
+msgid "Message"
+msgstr ""
+
+#: ../source/mainwindow.py:246
+msgid "You really want to quit?"
+msgstr ""
+
+#: ../source/mainwindow.py:355
+msgid "The list is empty"
+msgstr ""
+
+#: ../source/mainwindow.py:360
+msgid "Sure? Files on the list will be removed from your system."
+msgstr ""
+
+#: ../source/mainwindow.py:394
+msgid "Ready"
+msgstr ""
+
+#: ../source/mainwindow.py:418
+#, python-format
+msgid ""
+"Следующие каталоги:\n"
+"%s\n"
+"являются системными и будут пропущены."
+msgstr ""
+
+#: ../source/mainwindow.py:419
+msgid "Attention"
+msgstr ""
+
+#: ../source/listWidget.py:16
+msgid "Remove"
+msgstr ""

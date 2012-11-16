@@ -1,0 +1,6 @@
+desktop/*.desktop	/usr/share/applications
+pixmaps/*		    /usr/share/pixmaps
+icons/*             /usr/share/shreg
+source/*.py         /usr/lib/shreg
+bin/*               /usr/bin
+po/*.mo             /usr/share/locale/ru/LC_MESSAGES

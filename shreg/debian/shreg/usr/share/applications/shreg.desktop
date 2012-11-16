@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Shreg
+Name[ru]=Гарантированное уничтожение информации
+Exec=/usr/bin/shreg
+Comment[ru_RU]=Безвовзратное удаление файлов методом Питера Гутмана
+Icon=/usr/share/pixmaps/shreg.png
+Type=Application
+Categories=Application;Audit

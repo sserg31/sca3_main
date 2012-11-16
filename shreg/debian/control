@@ -1,0 +1,13 @@
+Source: shreg
+Priority: extra
+Maintainer: arxell <arxell@yandex.ru>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 0.3
+
+Package: shreg
+Version: 0.6
+Priority: extra
+Section: audit
+Architecture: all
+Depends: python-qt4, python(>=2.5), coreutils
+Description: gui for shred

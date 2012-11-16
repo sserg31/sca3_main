@@ -1,0 +1,9 @@
+Package: shreg
+Version: 0.6
+Architecture: all
+Maintainer: arxell <arxell@yandex.ru>
+Installed-Size: 300
+Depends: python-qt4, python (>= 2.5), coreutils
+Section: audit
+Priority: extra
+Description: gui for shred
