@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name = diskfind2
+Name[ru]=Поиск остаточной информации
+GenericName = diskfind2
+GenericName[ru] = Поиск остаточной информации
+Comment = Search information
+Comment[ru]=Поиск остаточной информации
+Exec = sudo diskfind_gui
+Icon = diskfind2.xpm
+Terminal=False
+Type=Application
+Categories=Application;Audit
+
+

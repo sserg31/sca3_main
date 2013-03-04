@@ -1,0 +1,12 @@
+Package: diskfind2-fsplugins
+Source: diskfind2
+Version: 0.3.0
+Architecture: i386
+Maintainer: Kostya Lebedev <k.lebedev@npo-echelon.ru>
+Installed-Size: 168
+Depends: e2fslibs (>= 1.37), libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libntfs10 (>= 2.0.0), libqtcore4 (>= 4:4.7.0~beta1), libstdc++6 (>= 4.1.1)
+Section: audit
+Priority: extra
+Homepage: www.cnpo.ru
+Description: filesystem plugins for disk keyword search utility.
+ Can display filenames for filesystems. In present files for filesystems FAT12/16/32, ext2/3/4. In present and deleted files for NTFS.

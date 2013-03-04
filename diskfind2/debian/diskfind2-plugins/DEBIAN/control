@@ -1,0 +1,14 @@
+Package: diskfind2-plugins
+Source: diskfind2
+Version: 0.3.0
+Architecture: i386
+Maintainer: Kostya Lebedev <k.lebedev@npo-echelon.ru>
+Installed-Size: 144
+Depends: libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.7.0~beta1), libstdc++6 (>= 4.1.1), catdoc, poppler-utils, odt2txt, docx2txt
+Section: audit
+Priority: extra
+Homepage: www.cnpo.ru
+Description: plugins for disk keyword search utility
+ Provides plugins for disk keyword search utility.
+ Can search in *.doc, *.xls, *.odt, *.ods, *.odg, *.odp and *.pdf files.
+ You can use plugin by specifying -t parameter (pdf, doc or odt) to diskfind_console or choosing plugin in diskfind_gui.

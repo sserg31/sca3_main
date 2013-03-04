@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application>
+  <name>Поиск информации по диску</name>
+  <command>gksu diskfind_gui</command>
+  <icon>/usr/share/pixmaps/diskfind2.xpm</icon>
+</application>

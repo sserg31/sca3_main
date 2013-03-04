@@ -1,0 +1,81 @@
+diskfind2 (0.3.0) maverick; urgency=low
+
+  * Добавлен поиск в *.docx и *.xlsx файлах.
+
+ -- k.lebedev <klebedev@klebedev-ThinkPad-T420>  Tue, 19 Jun 2012 16:03:05 +0400
+
+diskfind2 (0.3.0~alpha) unstable; urgency=low
+
+  * Добавлена поддержка файловых систем.
+  * FAT12/16/32 отображение полного пути только к существующим файлам.
+  * NTFS отображение полного пути к существующим и удаленным файлам.
+
+ -- kostya <kostya@kostya-Satellite-L500>  Mon, 14 Nov 2011 14:36:59 +0400
+
+diskfind2 (0.2.18) stable; urgency=low
+
+  * Возможен одновременный поиск по нескольким носителям. Приостановка поиска. Bugfixes.
+
+ -- kostya <kostya@kostya-Satellite-L500>  Thu, 28 Jul 2011 14:53:18 +0400
+
+diskfind2 (0.2.17) stable; urgency=low
+
+  * Автообновление списка устройств. Bugfixes.
+
+ -- kostya <kostya@kostya-Satellite-L500>  Wed, 27 Jul 2011 17:18:48 +0400
+
+diskfind2 (0.2.16) unstable; urgency=low
+
+  * Генерация xml--отчёта при прерывании.
+
+ -- kostya <kostya@kostya-Satellite-L500>  Thu, 23 Jun 2011 10:55:04 +0400
+
+diskfind2 (0.2.15) unstable; urgency=low
+
+  * Добавлен поиск по ods, odg, odp и xls документам. 
+
+ -- kostya <kostya@kostya-Satellite-L500>  Mon, 30 May 2011 19:53:25 +0400
+
+diskfind2 (0.2.14) unstable; urgency=low
+
+  * Добавлен поиск по odt документам.
+
+ -- kostya <kostya@kostya-Satellite-L500>  Mon, 30 May 2011 16:03:07 +0400
+
+diskfind2 (0.2.13) unstable; urgency=low
+
+  * Добавлена интеграция с shreg.
+
+ -- kostya <kostya@debian>  Fri, 22 Apr 2011 14:54:43 +0400
+
+diskfind2 (0.2.12) unstable; urgency=low
+
+  * Добавлено формирование xml--отчёта как в консольное приложение (-oX), так и экспорт в gui.
+
+ -- kostya <kostya@debian>  Wed, 16 Mar 2011 15:43:16 +0300
+
+diskfind2 (0.2.11) unstable; urgency=low
+
+  * Блокирование попытки закрытия основного окна программы в процессе поиска. Возможность выборочно упорядочивать результаты по столбцам отчета. Виден контекст найденной фразы.
+  * Динамическое формирование отчета поиска.
+  * Устранение ошибок.
+
+ -- kostya <kostya@debian>  Thu, 24 Feb 2011 18:08:42 +0300
+
+diskfind2 (0.2.10) unstable; urgency=low
+
+  * Составление подробного отчета. Добавлен посик по нескольким словарям одновременно. Небольшие изменения в интерфейсе.
+
+ -- Kostya Lebedev <devel@cnpo.ru>  Thu, 3 Feb 2011 09:22:26 +0300
+
+diskfind2 (0.2.9) unstable; urgency=low
+
+  * Пофиксен поиск по словарям. Не падает про поиске текста с пробелами и русским. Сохранение результатов поиска с расширением, небольшие изменения во внешнем виде таблица результатов.
+
+ -- Kostya Lebedev <devel@cnpo.ru>  Tue, 1 Feb 2011 15:42:03 +0300
+
+diskfind2 (0.2.8) unstable; urgency=low
+
+  * Добавлен поиск по pdf--документам.
+
+ -- Kostya Lebedev <devel@cnpo.ru>  Thu, 20 Jan 2011 15:55:03 +0300

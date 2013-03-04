@@ -1,0 +1,11 @@
+Package: diskfind2
+Version: 0.3.0
+Architecture: i386
+Maintainer: Kostya Lebedev <k.lebedev@npo-echelon.ru>
+Installed-Size: 27
+Depends: diskfind2-console, diskfind2-gui, diskfind2-plugins, diskfind2-fsplugins
+Section: audit
+Priority: extra
+Homepage: www.cnpo.ru
+Description: metapackage for diskfind utility
+ This package depends on all packages of diskfind.

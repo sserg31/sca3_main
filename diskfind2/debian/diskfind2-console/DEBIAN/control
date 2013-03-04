@@ -1,0 +1,14 @@
+Package: diskfind2-console
+Source: diskfind2
+Version: 0.3.0
+Architecture: i386
+Maintainer: Kostya Lebedev <k.lebedev@npo-echelon.ru>
+Installed-Size: 131
+Depends: libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.8.0), libstdc++6 (>= 4.4.0), disktype, file
+Section: audit
+Priority: extra
+Homepage: www.cnpo.ru
+Description: disk keyword search utility
+ Simple disk console search utility.
+ Suports UTF-8, KOI8-R, CP1251, CP866.
+ Can perform search by word and by dictionaries.

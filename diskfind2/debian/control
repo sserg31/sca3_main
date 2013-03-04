@@ -1,0 +1,41 @@
+Source: diskfind2
+Section: audit
+Priority: extra
+Maintainer: Kostya Lebedev <k.lebedev@npo-echelon.ru>
+Build-Depends: debhelper (>= 7.0.50~), qt4-dev-tools, cdbs, libntfs-dev, e2fslibs-dev
+Standards-Version: 3.8.4
+Homepage: www.cnpo.ru
+
+Package: diskfind2
+Architecture: any
+Depends: diskfind2-console, diskfind2-gui, diskfind2-plugins, diskfind2-fsplugins, ${misc:Depends}
+Description: metapackage for diskfind utility
+ This package depends on all packages of diskfind.
+
+Package: diskfind2-console
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, disktype, file
+Description: disk keyword search utility
+ Simple disk console search utility.
+ Suports UTF-8, KOI8-R, CP1251, CP866.
+ Can perform search by word and by dictionaries.
+
+Package: diskfind2-gui
+Architecture: any
+Depends: diskfind2-console, ${shlibs:Depends}, ${misc:Depends}, shreg
+Description: GUI for disk keyword search utility
+ GUI fot simple disk search utility.
+
+Package: diskfind2-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, catdoc, poppler-utils, odt2txt, docx2txt
+Description: plugins for disk keyword search utility
+ Provides plugins for disk keyword search utility.
+ Can search in *.doc, *.xls, *.odt, *.ods, *.odg, *.odp and *.pdf files.
+ You can use plugin by specifying -t parameter (pdf, doc or odt) to diskfind_console or choosing plugin in diskfind_gui.
+
+Package: diskfind2-fsplugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: filesystem plugins for disk keyword search utility.
+ Can display filenames for filesystems. In present files for filesystems FAT12/16/32, ext2/3/4. In present and deleted files for NTFS.

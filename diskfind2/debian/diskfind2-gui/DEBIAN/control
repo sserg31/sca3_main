@@ -1,0 +1,12 @@
+Package: diskfind2-gui
+Source: diskfind2
+Version: 0.3.0
+Architecture: i386
+Maintainer: Kostya Lebedev <k.lebedev@npo-echelon.ru>
+Installed-Size: 1114
+Depends: diskfind2-console, libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.4.0), shreg
+Section: audit
+Priority: extra
+Homepage: www.cnpo.ru
+Description: GUI for disk keyword search utility
+ GUI fot simple disk search utility.

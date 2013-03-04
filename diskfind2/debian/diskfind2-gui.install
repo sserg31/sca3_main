@@ -1,0 +1,7 @@
+usr/bin/diskfind_gui
+usr/share/applications
+usr/share/pixmaps
+usr/share/applauncher/apps/diskfind/
+usr/share/diskfind/diskfind_ru.qm
+applauncher/*         /usr/share/applauncher/apps
+

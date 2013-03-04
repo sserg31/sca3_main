@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>share/pixmaps/diskfind2.xpm</file>
+    </qresource>
+</RCC>

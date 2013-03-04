@@ -1,0 +1,15 @@
+*debhelper.log
+*substvars
+build-stamp
+configure-stamp
+*.pro.user
+*~
+*.o
+*.iso
+*.deb
+*.changes
+*.mo
+*.dsc
+*.tar.gz
+*.pyc
+
