@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: xfce4-session
+Description: Xfce 4 session manager
+Requires: libxfcegui4-1.0
+Version: 4.4.2
+Libs: -L${libdir} -lxfsm-4.2
+Cflags: -I${includedir}/xfce4/xfce4-session-4.2

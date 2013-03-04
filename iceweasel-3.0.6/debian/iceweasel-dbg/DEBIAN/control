@@ -1,0 +1,17 @@
+Package: iceweasel-dbg
+Source: iceweasel
+Version: 3.0.6-3
+Architecture: i386
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 1172
+Depends: iceweasel (= 3.0.6-3), xulrunner-1.9-dbg
+Conflicts: firefox-dbg
+Replaces: firefox-dbg
+Section: devel
+Priority: extra
+Description: debugging symbols for iceweasel
+ Iceweasel is a redesign of the Mozilla browser component, similar to
+ Galeon, K-Meleon and Camino, but written using the XUL user interface
+ language and designed to be lightweight and cross-platform.
+ .
+ This package contains the debugging symbols for iceweasel.

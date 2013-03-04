@@ -1,0 +1,10 @@
+thunar for Debian
+-----------------
+
+In order to use volume management features (i.e. mounting external disks/USB
+sticks/cameras etc) you should install hal and dbus.
+
+You also need to add yourself to the plugdev group and you may need to
+restart dbus after doing so if it is already running.
+
+ -- Xfce Packagers <pkg-xfce-devel@lists.alioth.debian.org>

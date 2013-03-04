@@ -1,0 +1,20 @@
+Package: iceweasel
+Version: 3.0.6-3
+Architecture: i386
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 3892
+Depends: fontconfig, psmisc, procps, debianutils (>= 1.16), libc6 (>= 2.7-1), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.12.0), libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), xulrunner-1.9 (>= 1.9.0.3-1)
+Suggests: xulrunner-1.9-gnome-support, latex-xft-fonts, xfonts-mathml, ttf-mathematica4.1, xprint, mozplugger, libkrb53
+Conflicts: firefox (<< 2.0+dfsg-1), iceweasel-dom-inspector (<< 3.0~b4), mozilla-firefox (<< 1.5.dfsg-1)
+Replaces: firefox (<< 2.0+dfsg-1), iceweasel-gnome-support (<= 3.0~b5-2), mozilla-firefox
+Provides: www-browser
+Section: web
+Priority: optional
+Description: lightweight web browser based on Mozilla
+ Iceweasel is a redesign of the Mozilla browser component, similar to
+ Galeon, K-Meleon and Camino, but written using the XUL user interface
+ language and designed to be lightweight and cross-platform.
+ .
+ This browser is based on the Firefox source-code, with minor
+ modifications. Historically, this browser was previously known as
+ Firebird and Phoenix.

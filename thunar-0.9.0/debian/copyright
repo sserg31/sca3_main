@@ -1,0 +1,51 @@
+This package was debianized by Yves-Alexis Perez <corsac@corsac.net> on
+Thu, 17 Nov 2005 13:48:54 +0100.
+
+It was downloaded from http://thunar.xfce.org/
+
+Copyright Holders: 
+==================
+
+2004-2007 Benedikt Meurer <benny@xfce.org>
+2005 Jeffs Franks <jcfranks@xfce.org>
+
+thunarx is copyrighted:
+
+Copyright (c) 2004 The GLib Development Team.
+Copyright (c) 2005 Benedikt Meurer <benny@xfce.org>
+
+thunar-vfs is copyrighted:
+
+Copyright (c) 2004 The GLib Development Team.
+Copyright (c) 2004-2005 Benedikt Meurer <benny@xfce.org>.
+
+tdb (trivial database system) is copyrighted:
+
+Copyright (c) 2001 	Anton Blanchard <anton@samba.org>
+Copyright (c) 2005 	Benedikt Meurer <benny@xfce.org>
+Copyright (c) 1999-2004 Andrew Tridgell <tridge@linuxcare.com>
+Copyright (c) 2000      Paul `Rusty' Russel <rusty@linuxcare.com>
+Copyright (c) 2000-2003 Jeremy Allison <jeremy@valinux.com>
+Copyright (c) 2001      Andrew Esh
+
+Licenses: 
+=========
+
+GNU/LGPL for files under thunarx, thunar-vfs , tdb folders
+GNU/GPL for the others
+
+GNU/FDL v1.1 or later for documentation, with no invariant sections, using the 
+following statement:
+
+  Permission is granted to copy, distribute and/or modify this document
+  under the terms of the GNU Free Documentation License, Version 1.1 or
+  any later version published by the Free Software Foundation; with no
+  Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+  Texts.
+
+On Debian systems, the complete text of the GNU General Public
+License can be found in the file `/usr/share/common-licenses/GPL'
+The complete text of the GNU Library General Public License can be
+found in the file `/usr/share/common-licenses/LGPL'
+The complete text of the GFDL (version 1.2) can be found in the file
+`/usr/share/common-licenses/GFDL-1.2'

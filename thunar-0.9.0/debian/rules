@@ -1,0 +1,56 @@
+#!/usr/bin/make -f
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS := --enable-final --disable-gnome-thumbnailers --enable-dbus --enable-startup-notification --enable-apr-plugin --enable-exif --enable-pcre --enable-sbr-plugin --enable-tpa-plugin --enable-uca-plugin
+
+DEB_DH_SHLIBDEPS_ARGS_thunar = -X debian/thunar/usr/lib/thunar/xfce4/panel-plugins/thunar-tpa -- -dRecommends debian/thunar/usr/lib/thunar/xfce4/panel-plugins/thunar-tpa -dDepends
+
+
+makebuilddir/thunar:: debian/compat
+	# Some systems don't have POSIX_MADV* but have MADV* defined with
+	# the same values anyway.
+	grep -q POSIX_MADV foo || sed -i -e 's/POSIX_MADV/MADV/' \
+		$(CURDIR)/thunar-vfs/*.c
+	
+
+install/thunar::
+	rm -f $(CURDIR)/debian/tmp/usr/lib/*.la 
+	rm -f $(CURDIR)/debian/tmp/usr/lib/*/*.la 
+	chrpath -d -k $(CURDIR)/debian/tmp/usr/bin/Thunar \
+		$(CURDIR)/debian/tmp/usr/lib/thunar/thunar-* \
+		$(CURDIR)/debian/tmp/usr/lib/libthunar*.so.*2 \
+		$(CURDIR)/debian/tmp/usr/lib/thunarx-1/thunar-apr.so \
+		$(CURDIR)/debian/tmp/usr/lib/thunar/xfce4/panel-plugins/thunar-tpa
+
+install/thunar-data::
+	cd $(CURDIR)/debian/tmp/usr/share/doc/ && mv Thunar thunar-data
+	rm -rf $(CURDIR)/debian/tmp/usr/share/man
+	# install sendto stuff
+	install -m 0644 $(CURDIR)/debian/bluetooth-sendto.desktop $(CURDIR)/debian/tmp/usr/share/Thunar/sendto/
+	install -m 0644 $(CURDIR)/debian/gnome-obex-send.desktop $(CURDIR)/debian/tmp/usr/share/Thunar/sendto/
+	install -m 0644 $(CURDIR)/debian/xfprint.desktop $(CURDIR)/debian/tmp/usr/share/Thunar/sendto/
+
+binary-post-install/thunar-data::
+	rm -rf $(CURDIR)/debian/thunar-data/usr/share/applications
+	rm -rf $(CURDIR)/debian/thunar-data/usr/share/xfce4/
+
+# The symlinks below aren't enough for dpkg to replace a directory with a
+# symlink but they mean it's part of the package.
+
+binary-post-install/thunar::
+	rm -rf $(CURDIR)/debian/thunar/usr/share/doc/thunar
+	cd $(CURDIR)/debian/thunar/usr/share/doc/ && \
+		rm -rf thunar && ln  -sf thunar-data thunar
+
+binary-post-install/libthunar-vfs-1-2::
+	install -D -p -o root -g root -m 644 debian/lintian.libthunar-vfs-1-2 $(CURDIR)/debian/libthunar-vfs-1-2/usr/share/lintian/overrides/libthunar-vfs-1-2/lintian
+	cd $(CURDIR)/debian/libthunar-vfs-1-2/usr/share/doc/ && \
+		rm -rf libthunar-vfs-1-2 && \
+		ln  -sf thunar-data libthunar-vfs-1-2
+
+binary-post-install/libthunar-vfs-1-dev::
+	cd $(CURDIR)/debian/libthunar-vfs-1-dev/usr/share/doc/ && \
+		rm -rf libthunar-vfs-1-dev && \
+		ln  -sf thunar-data libthunar-vfs-1-dev

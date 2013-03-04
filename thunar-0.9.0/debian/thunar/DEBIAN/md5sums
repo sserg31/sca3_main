@@ -1,0 +1,15 @@
+13a62738d49c4c549cc720c5746fa4d2  usr/share/man/man1/Thunar.1.gz
+4758789cfcc104d92203bbc632ba719b  usr/share/menu/thunar
+5640839f89cfc6225198ddc34409a998  usr/share/xfce4/panel-plugins/thunar-tpa.desktop
+4f696cb6c87259d39e63e86078ace516  usr/share/applications/Thunar-folder-handler.desktop
+3d67f7929ae555d7a90ce902fe676b48  usr/share/applications/Thunar-bulk-rename.desktop
+1a4af495250feafb4a1aa577ce236afb  usr/share/applications/Thunar.desktop
+8b873bd83e88af8686045388f5e9c52d  usr/bin/Thunar
+c7631aecbaff1e3f9af220fbcc64ec0a  usr/lib/thunar/thunar-vfs-mime-cleaner-1
+2c55b7128ad54d0bd4ba7c0f4d672b81  usr/lib/thunar/thunar-vfs-font-thumbnailer-1
+49e56e0730b80ebd6d6b1a1c2fef00fd  usr/lib/thunar/xfce4/panel-plugins/thunar-tpa
+46d40f0da091e2fd97c6ebd1536cc3df  usr/lib/thunar/ThunarHelp
+a43be10935a84ace98622a7f6b71e504  usr/lib/thunar/thunar-vfs-pixbuf-thumbnailer-1
+a232ec90c17cfc082c56a4d51e9a387d  usr/lib/thunar/thunar-vfs-update-thumbnailers-cache-1
+b14d894298a29db6904035e761aa5c6c  usr/lib/thunar/thunar-sendto-email
+6e31241a78aa1e8b0e91aeed7ddbbc28  usr/lib/thunar/ThunarBulkRename

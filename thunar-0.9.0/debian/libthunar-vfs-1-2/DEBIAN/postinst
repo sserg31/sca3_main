@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ]; then
+	# Frob /usr/share/doc so we don't needlessly duplicate things
+	rmdir /usr/share/doc/libthunar-vfs-1-2 2>/dev/null || true
+	cd /usr/share/doc && ln -sf thunar-data libthunar-vfs-1-2
+fi
+
+# Automatically added by dh_makeshlibs
+if [ "$1" = "configure" ]; then
+	ldconfig
+fi
+# End automatically added section
+
+
+exit 0

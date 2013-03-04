@@ -1,0 +1,1 @@
+../../../browser/components/microsummaries/public/_xpidlgen/nsIMicrosummaryService.h

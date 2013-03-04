@@ -1,0 +1,28 @@
+Source: xfce4
+Section: x11
+Priority: optional
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Uploaders: Martin Loschwitz <madkiss@debian.org>, Emanuele Rocca <ema@debian.org>, Simon Huggins <huggie@earth.li>, Yves-Alexis Perez <corsac@debian.org>
+Build-Depends: debhelper (>= 4.1.26)
+Standards-Version: 3.7.3
+Homepage: http://www.xfce.org/
+Vcs-Svn: svn://svn.debian.org/pkg-xfce/desktop/trunk/xfce4/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-xfce/desktop/trunk/xfce4/
+
+Package: xfce4
+Architecture: all
+Depends: xfwm4 (>= 4.4.2), xfce4-mcs-plugins (>= 4.4.2), xfce4-panel (>= 4.4.2), xfce4-icon-theme (>= 4.4.2), xfdesktop4 (>= 4.4.2), thunar (>= 0.8.0), xfce4-utils (>= 4.4.2), gtk2-engines-xfce (>= 2.4.2), xfce4-session (>= 4.4.2)
+Recommends: xorg, xfce4-mixer, xfprint4, orage, xfce4-terminal, desktop-base
+Replaces: xfce4-themes (<= 4.0.0+cvs.20030301-1), xfce4-dev (<< 4.0.0+cvs.20030421)
+Description: Meta-package for the Xfce Lightweight Desktop Environment
+ Xfce is a lightweight desktop environment for unix-like operating systems.  
+ It aims to be fast and lightweight, while still being visually appealing and 
+ easy to use.  Designed for productivity, it loads and executes applications 
+ fast, while conserving system resources. 
+ .
+ This package is a meta-package;  it depends on the core packages of the
+ Xfce4 desktop environment and recommends some extra Xfce4 packages.  If you
+ intend to use Xfce4 and want the full experience then installing this
+ package and the packages it Recommends is a great place to start.
+ If you just want to pick and choose the core components then feel free to
+ remove this package.

@@ -1,0 +1,4 @@
+debian/tmp/usr/bin/*
+debian/tmp/usr/lib/thunar/*
+debian/tmp/usr/share/applications/*
+debian/tmp/usr/share/xfce4/panel-plugins/thunar-tpa.desktop

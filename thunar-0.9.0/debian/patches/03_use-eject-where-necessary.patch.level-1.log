@@ -1,0 +1,30 @@
+can't find file to patch at input line 9
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|Thunar 0.9.0 displays the "Eject" menu item only for disc volumes. Apply
+|this patch to fix that issue and have Thunar display "Eject" also for
+|iPods and other volumes that require eject.
+|
+|Index: thunar/thunar-shortcuts-view.c
+|===================================================================
+|--- thunar/thunar-shortcuts-view.c	(revision 26456)
+|+++ thunar/thunar-shortcuts-view.c	(revision 26459)
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 29
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|Index: thunar/thunar-tree-view.c
+|===================================================================
+|--- thunar/thunar-tree-view.c	(revision 26456)
+|+++ thunar/thunar-tree-view.c	(revision 26459)
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored

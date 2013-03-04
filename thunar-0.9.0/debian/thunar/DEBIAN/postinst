@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ]; then
+	# Frob /usr/share/doc so we don't needlessly duplicate things
+	rmdir /usr/share/doc/thunar 2>/dev/null || true
+	cd /usr/share/doc && ln -sf thunar-data thunar
+fi
+
+# Automatically added by dh_installmenu
+if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
+	update-menus
+fi
+# End automatically added section
+
+
+exit 0

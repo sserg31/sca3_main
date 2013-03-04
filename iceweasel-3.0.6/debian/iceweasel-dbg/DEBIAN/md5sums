@@ -1,0 +1,4 @@
+ff99e5072df955f9ebc8fea1673b0863  usr/share/doc/iceweasel-dbg/copyright
+454a11843e48ea1bd56462ef2cfa6450  usr/share/doc/iceweasel-dbg/changelog.Debian.gz
+59b95e5e9912386d649f2672226f0c23  usr/lib/debug/usr/lib/iceweasel/components/libbrowserdirprovider.so
+5f83095e250e948c0086a1b50347212e  usr/lib/debug/usr/lib/iceweasel/components/libbrowsercomps.so

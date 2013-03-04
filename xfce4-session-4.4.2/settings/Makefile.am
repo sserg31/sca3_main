@@ -1,0 +1,4 @@
+SUBDIRS =								\
+	session								\
+	splash
+

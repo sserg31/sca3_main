@@ -1,0 +1,44 @@
+This package was debianized by Oliver M. Bolzer <oliver@debian.org> on
+Tue,  9 Dec 2003 09:40:42 +0100.
+
+You can fetch xfce4-session from the official Xfce4 website which is
+http://www.xfce.org
+
+Upstream Author are: 
+Benedikt Meurer <benny@xfce.org>
+Oliver M. Bolzer <oliver@debian.org>
+Francois Le Clainche <fleclainche@wanadoo.fr>
+Maarten Boekhold <boekhold@emirates.net.ae>
+Brian Tarricone <kelnos@xfce.org>
+Jani Monoses <jani@ubuntu.com>
+
+Copyright holders:
+
+ xfce4-session: © 2003-2006 Benedikt Meurer <benny@xfce.org>
+ xfce4-session/xfsm-legacy.c: © 2000 Matthias Ettrich <ettrich@kde.org>
+ xfce4-session/xfsm-manager.c: © 2000 Matthias Ettrich <ettrich@kde.org>
+
+ xfce4-session/xfsm-compat-gnome.c
+ xfce4-session/xfsm-compat-gnome.h
+ parts of libxfsm/xfsm-util.c, xfce4-session/xfsm-dns.c, 
+ xfce4-session/xfsm-legacy.c and xfce4-session/xfsm-manager.c are taken from
+ gnome-session, which is: © 1998,99,2000 Free Software Foundation, Inc.
+
+License:
+
+You are free to distribute this software under the terms of
+the GNU General Public License version 2 or later.
+On Debian systems, the complete text of the GNU General Public
+License can be found in the file `/usr/share/common-licenses/GPL'.
+
+Documentation is under GNU Free Documentation License v1.1 or later, without
+any invariant sections, using the following statement:
+
+  Permission is granted to copy, distribute and/or modify this document
+  under the terms of the GNU Free Documentation License, Version 1.1 or
+  any later version published by the Free Software Foundation; with no
+  Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+  Texts.
+
+On Debian systems, the complete text of the GNU Lesser General Public
+License can be found in the file `/usr/share/common-licenses/LGPL'.

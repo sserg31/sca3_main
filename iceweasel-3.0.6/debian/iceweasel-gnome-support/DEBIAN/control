@@ -1,0 +1,14 @@
+Package: iceweasel-gnome-support
+Source: iceweasel
+Version: 3.0.6-3
+Architecture: all
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 128
+Depends: iceweasel, xulrunner-1.9-gnome-support
+Provides: gnome-www-browser
+Section: gnome
+Priority: optional
+Description: Support for GNOME in Iceweasel
+ This is an Iceweasel component that allows it to use protocol
+ handlers from GnomeVFS, such as smb or sftp, and other GNOME
+ integration features.

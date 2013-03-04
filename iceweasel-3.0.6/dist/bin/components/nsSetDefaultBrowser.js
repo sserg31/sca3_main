@@ -1,0 +1,1 @@
+../../../browser/components/shell/src/nsSetDefaultBrowser.js

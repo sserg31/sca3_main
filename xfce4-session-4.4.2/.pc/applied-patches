@@ -1,0 +1,5 @@
+01_correct_shadows.patch
+02_use-mice-as-default-engine.patch
+03_xfce4-session-manpage-typo.patch
+04_xfce4-session-logout-manpage-typo.patch
+05_fix-resize-simple-splash-engine.patch

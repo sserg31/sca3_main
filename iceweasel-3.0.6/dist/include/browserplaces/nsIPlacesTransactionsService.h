@@ -1,0 +1,1 @@
+../../../browser/components/places/public/_xpidlgen/nsIPlacesTransactionsService.h

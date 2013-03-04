@@ -1,0 +1,6 @@
+92f3568380ea2b4c25a642eaee2b082d  usr/share/lintian/overrides/libthunar-vfs-1-2/lintian
+d565c9136d5473660b6f6e1e69974bc8  usr/lib/libthunar-vfs-1.so.2.3.1
+e05fa93c97299fe27cc5e939219b4ea0  usr/lib/thunarx-1/thunar-uca.so
+ec8034976259b9d54269dac6f8a358c8  usr/lib/thunarx-1/thunar-apr.so
+48d1ceae13c399533c0b8925a0f33492  usr/lib/thunarx-1/thunar-sbr.so
+09a81f829aecf922fee59f065d3af745  usr/lib/libthunarx-1.so.2.3.1

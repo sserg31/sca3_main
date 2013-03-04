@@ -1,0 +1,23 @@
+Source: xfce4-session
+Section: x11
+Priority: optional
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Uploaders: Emanuele Rocca <ema@debian.org>, Simon Huggins <huggie@earth.li>, Yves-Alexis Perez <corsac@debian.org>
+Build-Depends: debhelper (>= 4.0.0), xfce4-mcs-manager-dev (>= 4.4.2), xbase-clients, libxml-parser-perl, chrpath, quilt, fortune-mod, libdbus-1-dev
+Standards-Version: 3.7.3
+Homepage: http://www.xfce.org/
+Vcs-Svn: svn://svn.debian.org/pkg-xfce/desktop/trunk/xfce4-session/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-xfce/desktop/trunk/xfce4-session/
+
+Package: xfce4-session
+Architecture: any
+Depends: ${shlibs:Depends}, fortune-mod, xfce4-mcs-manager
+Recommends: xbase-clients, xfwm4, xfce4-utils, xfdesktop4, xfce4-panel, hal, dbus-x11
+Suggests: sudo
+Provides: x-session-manager
+Conflicts: xfce-mcs-manager (<< 4.4.2-3)
+Description: Xfce4 Session Manager
+ xfce4-session is an X11-compliant "session manager" designed for use with
+ the Xfce4 Desktop Environment. On log out, the session manager saves the
+ state of all your running applications. When you log back in, the session
+ manager restores the same applications with the same window positions.

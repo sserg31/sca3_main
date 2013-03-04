@@ -1,0 +1,24 @@
+diff --git a/xfce4-tips/data/tips b/xfce4-tips/data/tips
+index 0eed74f..d0f09fb 100644
+--- a/xfce4-tips/data/tips
++++ b/xfce4-tips/data/tips
+@@ -88,13 +88,13 @@ corresponding workspace
+ The Thunar file manager can be driven with the keyboard.
+ Have a look at Xfce 4 manual to learn more about its commands.
+ %
+-xfprint4 provides a graphical frontend for printing. It supports either 
+-CUPS, BSD-LPR or a file as destination, and printers are retrieved from 
+-the printing system you choosed.
++xfprint4 provides a graphical frontend for printing. It supports CUPS, 
++BSD-LPR or a file as the destination, and printers are retrieved from
++the chosen printing system.
+ 
+-Just configure your printer with the xfprint-manager application, then 
+-use drag and drop to xfprint4 icon on the panel (or the 'xfprint4 file' 
+-command) to print.
++Just configure your printer with the xfprint-manager application, then
++use drag and drop to the xfprint4 icon on the panel (or the 'xfprint4
++file' command) to print.
+ %
+ Select the "Always on top" option in the Xfce Panel settings dialog if 
+ your want the panel to always stay above all other windows, and keep its

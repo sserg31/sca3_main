@@ -1,0 +1,14 @@
+Package: thunar-dbg
+Source: thunar
+Version: 0.9.0-10
+Architecture: i386
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Installed-Size: 3252
+Depends: thunar (= 0.9.0-10)
+Section: x11
+Priority: extra
+Homepage: http://thunar.xfce.org
+Description: debugging informations for thunar
+ This package contains debugging symbols for thunar, libthunar-vfs and
+ libthunar-x, the file manager and file management libraries for Xfce Desktop
+ Environment.

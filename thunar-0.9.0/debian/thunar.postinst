@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ]; then
+	# Frob /usr/share/doc so we don't needlessly duplicate things
+	rmdir /usr/share/doc/thunar 2>/dev/null || true
+	cd /usr/share/doc && ln -sf thunar-data thunar
+fi
+
+#DEBHELPER#
+
+exit 0

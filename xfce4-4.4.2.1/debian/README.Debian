@@ -1,0 +1,17 @@
+First steps with Xfce
+---------------------
+
+For those using a login manager (gdm, kdm, ...) simply choosing "Xfce Session"
+is enough.
+
+Users that prefer to start X from the console can use startx or startxfce4
+though the former is preferred in a Debian system as it will run all
+standard X session startup files.
+See the relevant manual pages for more information.
+
+To adjust what is run by startxfce4, you can copy /etc/xdg/xfce4/xinitrc
+under your home directory in .config/xfce4/ and then hack it to match your
+wishes.
+
+Once you've installed this package, all the documentation will end up in
+/usr/share/xfce4/doc/C

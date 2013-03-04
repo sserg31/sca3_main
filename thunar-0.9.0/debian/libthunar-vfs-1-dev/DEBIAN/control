@@ -1,0 +1,13 @@
+Package: libthunar-vfs-1-dev
+Source: thunar
+Version: 0.9.0-10
+Architecture: i386
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Installed-Size: 240
+Depends: libthunar-vfs-1-2 (= 0.9.0-10), libexo-0.3-dev (>= 0.3.4), thunar-data (= 0.9.0-10)
+Section: libdevel
+Priority: optional
+Homepage: http://thunar.xfce.org
+Description: Development files for libthunar-vfs
+ This package contains the headers and the static library for libthunar-vfs,
+ the virtual file system abstraction used by thunar

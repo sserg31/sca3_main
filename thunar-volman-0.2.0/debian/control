@@ -1,0 +1,16 @@
+Source: thunar-volman
+Section: x11
+Priority: optional
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>, Emanuele Rocca <ema@debian.org>, Simon Huggins <huggie@earth.li>, Rudy Godoy <rudy@kernel-panik.org>, Martin Loschwitz <madkiss@debian.org>
+Build-Depends: debhelper (>= 4.1.0), cdbs, libthunar-vfs-1-dev (>= 0.5.1), libdbus-glib-1-dev, libexo-0.3-dev (>= 0.3.2), chrpath, libxml-parser-perl
+Standards-Version: 3.7.3
+Vcs-Svn: svn://svn.debian.org/pkg-xfce/goodies/thunar-volman/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-xfce/goodies/thunar-volman/
+
+Package: thunar-volman
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, thunar (>= 0.5.0rc2-1), exo-utils
+Description: Thunar extension for volumes management
+ The Thunar Volume Manager is an extension for the Thunar file manager, which 
+ enables automatic management of removable drives and media.

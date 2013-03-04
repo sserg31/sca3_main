@@ -1,0 +1,162 @@
+dnl $Id: configure.in.in 26339 2007-11-17 18:24:17Z kelnos $
+dnl
+dnl Copyright (c) 2003-2007
+dnl         The Xfce development team. All rights reserved.
+dnl
+dnl Written for Xfce by Benedikt Meurer <benny@xfce.org>.
+dnl
+
+dnl Version information
+m4_define([xfsm_version_major], [4])
+m4_define([xfsm_version_minor], [4])
+m4_define([xfsm_version_micro], [2])
+m4_define([xfsm_version_nano], [])
+m4_define([xfsm_version_build], [26361])
+m4_define([xfsm_version_tag], [])
+m4_define([xfsm_version], [xfsm_version_major().xfsm_version_minor().xfsm_version_micro()ifelse(xfsm_version_nano(), [], [], [.xfsm_version_nano()])ifelse(xfsm_version_tag(), [svn], [xfsm_version_tag()[-r]xfsm_version_build()], [])])
+
+dnl Initialize autoconf
+AC_COPYRIGHT([Copyright (c) 2003-2007
+        The Xfce development team. All rights reserved.
+        
+Written for Xfce by Benedikt Meurer <benny@xfce.org>.])
+AC_INIT([xfce4-session], [xfsm_version], [xfce4-dev@xfce.org])
+AC_PREREQ([2.50])
+AC_REVISION([$Id: configure.in.in 26339 2007-11-17 18:24:17Z kelnos $])
+AC_PROG_MAKE_SET()
+
+dnl Initialize automake
+AM_INIT_AUTOMAKE([AC_PACKAGE_TARNAME()], [AC_PACKAGE_VERSION()])
+AM_CONFIG_HEADER([config.h])
+AM_MAINTAINER_MODE()
+
+dnl check for UNIX variants
+AC_AIX()
+AC_ISC_POSIX()
+AC_MINIX()
+AM_CONDITIONAL([HAVE_OS_CYGWIN], [test x"`uname | grep \"CYGWIN\"`" != x""])
+if test x"`uname | grep \"CYGWIN\"`" != x""; then
+	AC_DEFINE([HAVE_OS_CYGWIN], [1], [Compiling under cygwin])
+fi
+
+dnl check for basic programs
+AC_PROG_CC()
+AC_PROG_INSTALL()
+AC_PROG_INTLTOOL()
+AC_PROG_LIBTOOL()
+
+dnl check for standard header files
+AC_HEADER_STDC
+AC_CHECK_HEADERS([errno.h fcntl.h limits.h netdb.h signal.h stdarg.h \
+  sys/param.h sys/resource.h sys/socket.h sys/time.h sys/wait.h sys/utsname.h \
+  time.h unistd.h])
+AC_CHECK_FUNCS([getaddrinfo gethostbyname gethostname sigaction strdup sync \
+                vfork])
+
+dnl Check for X11 installed
+XDT_CHECK_LIBX11_REQUIRE()
+
+dnl Check for session management support
+XDT_CHECK_LIBSM()
+
+dnl Check for _IceTransNoListen
+ac_LIBS="$LIBS"
+LIBS="$LIBS $LIBSM_LDFLAGS $LIBSM_LIBS"
+AC_CHECK_FUNCS([_IceTransNoListen])
+LIBS="$ac_LIBS"
+
+dnl Check for i18n support
+XDT_I18N([am ar az be bn_IN ca cs de dz el en_GB eo es es_MX et eu fa fi fr gl gu he hi hu it ja ka ko lt lv mk mr ms nl nb_NO pa pl pt_BR pt_PT ro ru sv sk ta tr uk vi zh_CN zh_TW])
+
+dnl Check for required packages
+XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.4.0])
+XDT_CHECK_PACKAGE([LIBXFCE4MCS_CLIENT], [libxfce4mcs-client-1.0], [4.4.0])
+XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.4.0])
+
+dnl Configure the MCS plugins
+XDT_XFCE_MCS_PLUGIN([XFCE_MCS_MANAGER], [4.4.0])
+
+dnl Check for D-Bus support (for HAL shutdown support)
+XDT_CHECK_OPTIONAL_PACKAGE([DBUS], [dbus-1], [0.34], [dbus],
+                           [Hal shutdown support], [yes])
+
+dnl Check for gnome support
+XDT_CHECK_OPTIONAL_PACKAGE([GNOME], [gconf-2.0], [2.4.0], [gnome],
+                           [Assistive technologies support], [no])
+
+dnl Check for debugging support
+BM_DEBUG_SUPPORT()
+
+dnl Check for iceauth
+AC_PATH_PROG([ICEAUTH], [iceauth])
+if test x"$ICEAUTH" != x""; then
+  AC_DEFINE_UNQUOTED([ICEAUTH_CMD], ["$ICEAUTH"], [path to iceauth])
+else
+  AC_MSG_ERROR([iceauth missing, please check your X11 installation])
+fi
+
+dnl Check for rm
+AC_PATH_PROG([RM], [rm])
+if test x"$RM" != x""; then
+  AC_DEFINE_UNQUOTED([RM_CMD], ["$RM"], [path to rm])
+fi
+
+dnl Check for legacy session management
+AC_ARG_ENABLE([legacy-sm],
+AC_HELP_STRING([--enable-legacy-sm], [Enable X11R5 session management])
+AC_HELP_STRING([--disable-legacy-sm], [Disable X11R5 session management]),
+  [], [enable_legacy_sm=yes])
+AC_MSG_CHECKING([whether to enable X11R5 session management])
+if test x"$enable_legacy_sm" != x"yes"; then
+  AC_MSG_RESULT([no])
+else
+  AC_DEFINE([LEGACY_SESSION_MANAGEMENT], [1], [Define for X11R5 sm compat])
+  AC_MSG_RESULT([yes])
+fi
+
+dnl Check whether to create session screenshots
+AC_ARG_ENABLE([session-screenshots],
+AC_HELP_STRING([--enable-session-screenshots], [Create screenshots of sessions on logout]),
+  [], [enable_session_screenshots=no])
+AC_MSG_CHECKING([whether to create screenshots of sessions on logout])
+if test x"$enable_session_screenshots" != x"yes"; then
+  AC_MSG_RESULT([no])
+else
+  AC_DEFINE([SESSION_SCREENSHOTS], [1], [Define for session screenshots])
+  AC_MSG_RESULT([yes])
+fi
+
+AC_OUTPUT([
+Makefile
+xfce4-session.spec
+doc/Makefile
+doc/C/Makefile
+doc/C/images/Makefile
+doc/fr/Makefile
+doc/fr/images/Makefile
+engines/Makefile
+engines/balou/Makefile
+engines/balou/scripts/Makefile
+engines/balou/themes/Makefile
+engines/balou/themes/Default/Makefile
+engines/mice/Makefile
+engines/simple/Makefile
+icons/Makefile
+icons/48x48/Makefile
+icons/64x64/Makefile
+icons/72x72/Makefile
+icons/128x128/Makefile
+icons/scalable/Makefile
+libxfsm/Makefile
+libxfsm/xfce4-session-1.0.pc
+po/Makefile.in
+settings/Makefile
+settings/session/Makefile
+settings/splash/Makefile
+xfce4-session/Makefile
+xfce4-session-logout/Makefile
+xfce4-autostart-editor/Makefile
+xfce4-tips/Makefile
+xfce4-tips/data/Makefile
+xfsm-shutdown-helper/Makefile
+])

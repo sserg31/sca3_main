@@ -1,0 +1,11 @@
+xfce4-session: no-shlibs-control-file usr/lib/libxfsm-4.2.so.0.0.1
+xfce4-session: postinst-must-call-ldconfig usr/lib/libxfsm-4.2.so.0.0.1
+xfce4-session: non-dev-pkg-with-shlib-symlink usr/lib/libxfsm-4.2.so.0.0.1 usr/lib/libxfsm-4.2.so
+xfce4-session: package-name-doesnt-match-sonames libxfsm-4.2-0
+# These are all private
+xfce4-session: binary-without-manpage usr/sbin/balou-export-theme
+xfce4-session: binary-without-manpage usr/sbin/balou-install-theme
+xfce4-session: binary-without-manpage usr/sbin/xfsm-shutdown-helper
+# We depend on xfce-mcs-manager
+xfce4-session: desktop-command-not-in-package /usr/share/applications/xfce-session-settings.desktop xfce-setting-show
+xfce4-session: desktop-command-not-in-package /usr/share/applications/xfce-splash-settings.desktop xfce-setting-show

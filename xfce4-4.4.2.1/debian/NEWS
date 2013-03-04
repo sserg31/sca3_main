@@ -1,0 +1,14 @@
+xfce4 (4.3.90.1-1) unstable; urgency=low
+
+  This is the 4.4beta1 release of xfce.  If you are running xfce at the time
+  you do this upgrade please consider restarting very shortly afterwards.
+
+  This is a major upgrade and as such you will lose some of your config - there
+  is no sane way for us to avoid this.  Notably the panel config will need to
+  be changed.  Also as this is a beta please consider reporting any bugs to
+  upstream first or to both the BTS and upstream's bugzilla at
+  http://bugzilla.xfce.org/
+
+  Also #xfce and #debian-xfce on irc.freenode.net can be useful resources.
+
+ -- Simon Huggins <huggie@earth.li>  Wed, 03 May 2006 17:37:50 +0100

@@ -1,0 +1,12 @@
+missing header for unified diff at line 3 of patch
+can't find file to patch at input line 3
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|--- ThunarHelp.in	2006-04-13 23:57:36.000000000 +0200
+|+++ ThunarHelp.in	2006-03-01 16:44:06.000000000 +0100
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored

@@ -1,0 +1,10 @@
+Managing shutdown
+-----------------
+
+There are three ways to enable user to shutdown the computer from Xfce:
+
+ - use sudo, and allow user to run /usr/sbin/xfsm-shutdown-helper in sudoers
+ - use dbus and hal
+   - hal and dbus should be installed, up and running
+   - user should be in powerdev group
+ - use policykit and a compatible login manager (gdm is known to work)

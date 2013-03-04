@@ -1,0 +1,6 @@
+skin global classic/1.0 jar:classic.jar!/skin/classic/global/ os!=WINNT
+skin global classic/1.0 jar:classic.jar!/skin/classic/global/ os=WINNT osversion<6
+skin mozapps classic/1.0 jar:classic.jar!/skin/classic/mozapps/ os!=WINNT
+skin mozapps classic/1.0 jar:classic.jar!/skin/classic/mozapps/ os=WINNT osversion<6
+skin help classic/1.0 jar:classic.jar!/skin/classic/help/
+override chrome://global/skin/icons/loading_16.png chrome://global/skin/icons/loading_16_grey.gif
